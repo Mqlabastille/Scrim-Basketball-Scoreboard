@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="hero">
+            <h1>2025 Playoffs <span id="trophy">🏆</span></h1>
+        </div>
+        <div class="container">
+            <div>
+                <h2 class="team">Knicks</h2>
+                <h3 class="team-subheading">HOME</h3>
+                <img class="team-logo" src="nynickslogo.avif"/>
+                <p class="scorecard" id="home-scorecard">0</p>
+                <button onclick="homeScored1()" class="score-btn">+1</button>
+                <button onclick="homeScored2()" class="score-btn">+2</button>
+                <button onclick="homeScored3()" class="score-btn">+3</button>
+            </div>
+            <div>
+                <h2 class="team">Pistons</h2>
+                <h3 class="team-subheading">GUEST</h3>
+                <img class="team-logo" src="detroitpistonslogo.png"/>
+                <p class="scorecard" id="guest-scorecard">0</p>
+                <button onclick="guestScored1()" class="score-btn">+1</button>
+                <button onclick="guestScored2()" class="score-btn">+2</button>
+                <button onclick="guestScored3()" class="score-btn">+3</button>
+            </div>
+        </div>
+        <button id="reset-btn" onclick="newGame()">NEW GAME</button>
+        <script src="index.js"></script>
+    </body>
+</html>
